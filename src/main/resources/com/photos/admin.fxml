@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="516.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.photos.controllers.AdminPageController">
+   <children>
+      <TableView fx:id="listOfUsers" prefHeight="516.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="199.0" text="User" />
+        </columns>
+      </TableView>
+      <Button fx:id="adminLogOutButton" layoutX="210.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleAdminLogOutButton" prefHeight="51.0" prefWidth="155.0" text="Log out">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="createUserButton" layoutX="210.0" layoutY="69.0" mnemonicParsing="false" onAction="#handleCreateUserButton" prefHeight="51.0" prefWidth="155.0" text="Create User">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteUserButton" layoutX="210.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleDeleteUserButton" prefHeight="51.0" prefWidth="155.0" text="Delete User">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

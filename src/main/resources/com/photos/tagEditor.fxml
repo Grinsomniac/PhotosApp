@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="170.0" prefWidth="264.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.photos.controllers.TagController">
+   <children>
+      <TextField fx:id="createTagName" layoutX="52.0" layoutY="47.0" promptText="Tag" />
+      <TextField fx:id="createTagValue" layoutX="52.0" layoutY="81.0" promptText="Value" />
+      <Button fx:id="cancelCreateTag" layoutX="52.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleCancelTagCreate" text="Cancel" />
+      <Button fx:id="confirmTagCreate" layoutX="151.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleTagConfirm" text="Confirm" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="7.0" text="Tag Editor" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
